@@ -1,14 +1,14 @@
-class Node{
-    int data;
-    Node next;
-
-    Node(int d){
-        this.data=d;
-        this.next=null;
-    }
-}
-
 public class LL {
+
+    static class Node{
+        int data;
+        Node next;
+
+        Node(int d){
+            this.data=d;
+            this.next=null;
+        }
+    }
 
     Node head;
     LL(){
@@ -54,7 +54,7 @@ public class LL {
             insertFirst(data);
         }
         else {
-            Node newNode=new Node(data);
+            Node newNode= new Node(data);
             for(int i=1; i<pos-1; i++){
                 temp=temp.next;
             }
